@@ -26,7 +26,7 @@ const FileUploader = ({className, ownerId, accountId} : Props) => {
       if(file.size > MAX_FILE_SIZE) {
         setFile((prevFiles) => prevFiles.filter((f) => f.name !== file.name))
         toast.error(
-          <p className='body-2 text-blackS'>
+          <p className='body-2 text-black'>
             <span className="font-semibold">
               {file.name}
             </span> is too large. Max file size is 50MB
