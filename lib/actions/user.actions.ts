@@ -7,7 +7,6 @@ import { avatarPlaceholderUrl } from "@/constants";
 import { parseStringify } from "../utils";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
-import { error } from "console";
 
 const getUserByEmail = async (email:string) => {
     const {databases} = await createAdminClient();
